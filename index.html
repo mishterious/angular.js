@@ -1,0 +1,43 @@
+<html ng-app="myApp">
+<head>
+<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+	
+	<script type+'text/javascript'>
+		var myAppModule = angular.module('myApp', []);
+
+
+
+	</script>
+
+	<style>
+	.container{
+		margin: 100, 200px, 100px,9px;
+	}
+	
+	</style>
+
+
+</head>
+  <body>
+  	<div class="container">
+	  	<h3>Add a new customer</h3>
+	  	Customer Name: <input type="text" name="name">
+	  	<button type="submit" class="btn btn-default">Add</button>
+	  	<div ng-init="students=[{name:'Mike', age: 34}, {name:'Bernhoft', age: 34},{name:'Mish', age: 26}, {name:'Mike', age: 12}, {name:'Mike', age: 27}]">
+	  		<table>
+	  			<tr>
+	  				<thead>
+	  					<td>Customer Name</td>
+	  					<td>Created Date</td>
+	  					<td>Actions</td>
+	  				</thead>
+	  			</tr>
+		  		<tr ng-repeat="student in students">{{student.name}}, {{student.age}}</td>
+		  		</tr>
+	  		</table>
+	  	</div>
+ 	 </div>
+  </body>
+</html>
